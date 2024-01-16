@@ -11,7 +11,7 @@ export default function CustomLayout({
       <div style={{ position: "fixed", width: "100%", zIndex: 999 }}>
         <Navbar />
       </div>
-      <div className="mx-auto py-2 md:px-32 sm:px-6 px-2 w-100 bg-white text-black  pt-[60px] min-h-[95vh]">
+      <div className="mx-auto py-2  w-100 bg-white text-black  pt-[50px] min-h-[95vh]">
         {children}
       </div>
       <div>

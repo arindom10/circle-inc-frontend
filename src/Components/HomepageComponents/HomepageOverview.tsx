@@ -1,10 +1,9 @@
-import React from "react";
 import Banner from "./Banner";
 import DropshippingAd from "./DropshippingAd";
 import LatestWorks from "./LatestWorks";
-import Services from "./Services";
-import OurTeam from "./OurTeam";
 import OtherServices from "./OtherServices";
+import OurTeam from "./OurTeam";
+import Services from "./Services";
 
 const HomepageOverview = () => {
   return (

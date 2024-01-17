@@ -26,6 +26,9 @@ const DropshippingAd = () => {
             <img className="h-5" src={image} />
           ))}
         </div>
+        <div>
+          <FaCheckCircle />
+        </div>
       </div>
       <div className=" col col-span-6">
         <img
@@ -33,9 +36,6 @@ const DropshippingAd = () => {
           alt="banner"
           className=" h-[500px] w-full"
         />
-      </div>
-      <div>
-        <FaCheckCircle />
       </div>
     </div>
   );

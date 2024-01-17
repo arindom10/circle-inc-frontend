@@ -10,19 +10,18 @@ const Banner = () => {
           ইকমার্স/ড্রপশিপিং ওয়েবসাইট এবং মোবাইল অ্যাপ ডেভেলপ করে নিন খুব সহজে
           বিকমার্স থেকে।
         </span>
-      </div>
-      <div className=" col col-span-6">
-        <img
-          src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
-          alt="banner"
-          className=" h-[500px] w-full"
-        />
-      </div>
-      <div>
+
         <button className="p-2 rounded-full bg-[#009494] w-52 text-white font-semibold">
           Call Now <br />
           +8801735049535
         </button>
+      </div>
+      <div className=" col col-span-6  my-auto">
+        <img
+          src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
+          alt="banner"
+          className=" h-[420px] w-full flex items-center justify-center"
+        />
       </div>
     </div>
   );

@@ -13,13 +13,13 @@ const Banner = () => {
       </div>
       <div className=" col col-span-6">
         <img
-          src="https://i.ibb.co/BtsqNyf/hire-developer-onsite.png"
+          src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
           alt="banner"
-          className=" h-[350px] w-full"
+          className=" h-[500px] w-full"
         />
       </div>
       <div>
-        <button className="p-4 rounded-full bg-[#009494] w-52 text-white font-semibold">
+        <button className="p-2 rounded-full bg-[#009494] w-52 text-white font-semibold">
           Call Now <br />
           +8801735049535
         </button>

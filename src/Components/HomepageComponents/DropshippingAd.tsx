@@ -1,4 +1,14 @@
+import { FaCheckCircle } from "react-icons/fa";
+
 const DropshippingAd = () => {
+  const images = [
+    "https://it.bcommerce.io/static/media/1688.d0a69550a2274f6c5d4c.png",
+    "https://it.bcommerce.io/static/media/amazon.5ad50eeebb8e9c1fbbd1.png",
+    "https://it.bcommerce.io/static/media/walmart.18056baaca0e2018135e.png",
+    "https://it.bcommerce.io/static/media/aliexpress.812bd1c7ee1dfdbb1ad0.png",
+    "https://it.bcommerce.io/static/media/alibaba.121cff6bd7f40cb46491.png",
+  ];
+
   return (
     <div className="grid grid-cols-12 gap-4  md:px-32 sm:px-6 px-2 py-8">
       <div className=" col col-span-6 flex justify-center flex-col gap-8">
@@ -12,31 +22,9 @@ const DropshippingAd = () => {
           Dropshipping ওয়েবসাইট ডেভেলপ করুন খুব সহজে।
         </span>
         <div className="flex">
-          <img
-            className="h-5"
-            src="https://it.bcommerce.io/static/media/1688.d0a69550a2274f6c5d4c.png"
-            alt=""
-          />
-          <img
-            className="h-5"
-            src="https://it.bcommerce.io/static/media/amazon.5ad50eeebb8e9c1fbbd1.png"
-            alt=""
-          />
-          <img
-            className="h-5"
-            src="https://it.bcommerce.io/static/media/walmart.18056baaca0e2018135e.png"
-            alt=""
-          />
-          <img
-            className="h-5"
-            src="https://it.bcommerce.io/static/media/aliexpress.812bd1c7ee1dfdbb1ad0.png"
-            alt=""
-          />
-          <img
-            className="h-5"
-            src="https://it.bcommerce.io/static/media/alibaba.121cff6bd7f40cb46491.png"
-            alt=""
-          />
+          {images.map((image) => (
+            <img className="h-5" src={image} />
+          ))}
         </div>
       </div>
       <div className=" col col-span-6">
@@ -47,10 +35,7 @@ const DropshippingAd = () => {
         />
       </div>
       <div>
-        <button className="p-2 rounded-full bg-[#009494] w-52 text-white font-semibold">
-          Call Now <br />
-          +8801735049535
-        </button>
+        <FaCheckCircle />
       </div>
     </div>
   );

@@ -18,7 +18,7 @@ const Footer = () => {
         <FaFacebook />
       </div>
       <div className="flex justify-center mt-6  gap-8">
-        <span>© 2019-2023 Bcommerce - All Rights Reserved</span>
+        <span>© 2023-2024 Circle-INC - All Rights Reserved</span>
       </div>
     </div>
   );

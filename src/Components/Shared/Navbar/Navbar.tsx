@@ -25,7 +25,9 @@ const Navbar = () => {
           {/* Right side */}
           <div className="hidden md:flex items-center mt-4 md:mt-0 gap-4">
             <Link href="/contact">
-              <button className="text-white mr-2 relative">Contact</button>
+              <button className="text-white rounded-full bg-[#009494] w-24 h-10 text-white font-semibold  mr-2 relative">
+                Contact
+              </button>
             </Link>
           </div>
         </div>

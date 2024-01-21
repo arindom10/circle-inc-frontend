@@ -1,4 +1,5 @@
 import { FaCheckCircle } from "react-icons/fa";
+import Carousel from "./Carousel";
 
 const DropshippingAd = () => {
   const images = [
@@ -13,7 +14,8 @@ const DropshippingAd = () => {
     <div className="grid grid-cols-12 gap-4  md:px-32 sm:px-6 px-2 py-8">
       <div className=" col col-span-6 flex justify-center flex-col gap-8">
         <span className=" font-bold text-2xl">
-          এডভান্সড B2B/B2C ড্রপশিপিং ওয়েবসাইট ও অ্যাপ
+          এডভান্সড B2B/B2C <span className="text-cyan-600">ড্রপশিপিং</span>{" "}
+          ওয়েবসাইট ও অ্যাপ
         </span>
         <span className="text-lg">
           চায়না, আমেরিকা, যুক্তরাজ্য, দুবাই, ইন্ডিয়া সহ পৃথিবীর যেকোন দেশের
@@ -26,16 +28,32 @@ const DropshippingAd = () => {
             <img className="h-5" src={image} />
           ))}
         </div>
-        <div>
-          <FaCheckCircle />
+        <div className="flex gap-3">
+          <FaCheckCircle className="text-cyan-600" />
+          <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
+        </div>
+        <div className="flex gap-3">
+          <FaCheckCircle className="text-cyan-600" />
+          <span>
+            1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট লিঙ্ক
+            দিয়ে সার্চ করার সুবিধা।
+          </span>
+        </div>
+        <div className="flex gap-3">
+          <FaCheckCircle className="text-cyan-600" />
+          <span>সুপার ফাস্ট লোড টাইম এবং ইউজার এক্সপেরিয়েন্স।</span>
+        </div>
+        <div className="flex gap-3">
+          <FaCheckCircle className="text-cyan-600" />
+          <span>অ্যাডভান্স এবং পারশিয়াল পেমেন্ট সিস্টেম।</span>
+        </div>
+        <div className="flex gap-3">
+          <FaCheckCircle className="text-cyan-600" />
+          <span>বিকাশ, নগদ, ব্যাংক, Sslcommerz পেমেন্ট গেটওয়ে।</span>
         </div>
       </div>
       <div className=" col col-span-6">
-        <img
-          src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
-          alt="banner"
-          className=" h-[500px] w-full"
-        />
+        <Carousel />
       </div>
     </div>
   );

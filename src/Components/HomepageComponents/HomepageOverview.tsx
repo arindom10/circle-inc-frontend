@@ -1,4 +1,5 @@
 import Banner from "./Banner";
+import Contact from "./Contact";
 import DropshippingAd from "./DropshippingAd";
 import LatestWorks from "./LatestWorks";
 import OtherServices from "./OtherServices";
@@ -12,6 +13,7 @@ const HomepageOverview = () => {
       <DropshippingAd />
       <LatestWorks />
       <Services />
+      <Contact />
       <OurTeam />
       <OtherServices />
     </div>

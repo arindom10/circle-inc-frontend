@@ -19,7 +19,7 @@ const LatestWorks = () => {
         </span>
       </div>
       <div className="flex justify-center items-center mt-16 gap-16">
-        {images.map((image) => (
+        {images.map((image, index) => (
           <img key={index} className="h-20 bg-slate-50 " src={image} />
         ))}
       </div>

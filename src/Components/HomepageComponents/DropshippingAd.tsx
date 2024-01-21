@@ -24,7 +24,7 @@ const DropshippingAd = () => {
           Dropshipping ওয়েবসাইট ডেভেলপ করুন খুব সহজে।
         </span>
         <div className="flex">
-          {images.map((image) => (
+          {images.map((image, index) => (
             <img key={index} className="h-5" src={image} />
           ))}
         </div>

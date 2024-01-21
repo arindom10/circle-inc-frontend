@@ -9,13 +9,13 @@ const LatestWorks = () => {
     <div className="mt-16">
       <div>
         <span className=" font-bold text-2xl flex justify-center items-center">
-          আমরা <span className="text-cyan-600">ডেভেলপ করেছি </span>
+          আমরা <span className="text-cyan-600 ml-2"> ডেভেলপ করেছি </span>
         </span>
       </div>
       <div>
         <span className=" font-bold text-2xl flex justify-center items-center">
-          দেশের সেরা<span className="text-cyan-600">৩ টি </span> ড্রপশিপিং
-          ওয়েবসাইট
+          দেশের সেরা <span className="text-cyan-600 ml-2"> ৩ টি </span>
+          <span className="ml-2">ড্রপশিপিং ওয়েবসাইট</span>
         </span>
       </div>
       <div className="flex justify-center items-center mt-16 gap-16">

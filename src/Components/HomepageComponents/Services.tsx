@@ -22,26 +22,26 @@ const Services = () => {
           এবং সুপার ফাস্ট ইকমার্স ওয়েবসাইট ডেভেলপ করে দিবো।
         </span>
 
-        <div className="flex gap-3">
+        <div className="flex items-center  gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>
             1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট লিঙ্ক
             দিয়ে সার্চ করার সুবিধা।
           </span>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>সুপার ফাস্ট লোড টাইম এবং ইউজার এক্সপেরিয়েন্স।</span>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>অ্যাডভান্স এবং পারশিয়াল পেমেন্ট সিস্টেম।</span>
         </div>
-        <div className="flex gap-3">
+        <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>বিকাশ, নগদ, ব্যাংক, Sslcommerz পেমেন্ট গেটওয়ে।</span>
         </div>

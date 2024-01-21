@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 const images = [
@@ -21,13 +22,15 @@ const Carousel = () => {
   return (
     <div className="relative overflow-hidden h-full">
       {images.map((image, index) => (
-        <img
-          key={index}
+        <Image
+          height={100}
+          width={100}
+          key={image}
           src={image}
           alt={`Carousel Image ${index + 1}`}
           className={`transition-transform ease-in-out duration-1000 transform ${
             index === currentIndex ? "translate-x-0" : "translate-x-full"
-          } absolute h-full w-full border-neutral-950 rounded-2xl border-black`}
+          } absolute h-full w-full border-neutral-950 rounded-2xl`}
         />
       ))}
     </div>

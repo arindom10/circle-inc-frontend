@@ -1,10 +1,13 @@
+import Image from "next/image";
 import { FaCheckCircle } from "react-icons/fa";
 
 const Services = () => {
   return (
     <div className="grid grid-cols-12 gap-4 bg-[#DDEFF1] md:px-32 sm:px-6 px-2 py-8 mt-16">
       <div className=" col col-span-6  my-auto">
-        <img
+        <Image
+          height={100}
+          width={100}
           src="https://it.bcommerce.io/static/media/ecommerce.ba25d2ef078c4f6d00da7069dd31ca0e.svg"
           alt="banner"
           className=" h-[420px] w-full flex items-center justify-center"

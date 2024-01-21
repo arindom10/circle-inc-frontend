@@ -1,5 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
 import Carousel from "./Carousel";
+import Image from "next/image";
 
 const DropshippingAd = () => {
   const images = [
@@ -24,8 +25,15 @@ const DropshippingAd = () => {
           Dropshipping ওয়েবসাইট ডেভেলপ করুন খুব সহজে।
         </span>
         <div className="flex gap-4">
-          {images.map((image, index) => (
-            <img key={index} className="h-5 " src={image} />
+          {images.map((image) => (
+            <Image
+              height={100}
+              width={100}
+              alt=""
+              key={image}
+              className="h-5 "
+              src={image}
+            />
           ))}
         </div>
         <div className="flex items-center gap-3">

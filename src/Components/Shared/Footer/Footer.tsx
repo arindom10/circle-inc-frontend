@@ -1,6 +1,6 @@
+import Link from "next/link";
 import React from "react";
-import { FaWhatsapp } from "react-icons/fa";
-import { FaFacebook } from "react-icons/fa";
+import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -14,7 +14,9 @@ const Footer = () => {
         <span>Terms & Conditions</span>
       </div>
       <div className="flex justify-center mt-6 text-4xl gap-8">
-        <FaWhatsapp />
+        <Link href="https://wa.me/message/GW4RVNQAFXD3A1" target="_blank">
+          <FaWhatsapp />
+        </Link>
         <FaFacebook />
       </div>
       <div className="flex justify-center mt-6  gap-8">

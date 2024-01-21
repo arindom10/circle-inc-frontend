@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Contact = () => {
@@ -12,13 +13,17 @@ const Contact = () => {
           ও সফটওয়্যার ডেভেলপ করে দিবো।
         </span>
 
-        <button className="p-2 rounded-full bg-[#009494] w-52 text-white font-semibold">
-          Call Now <br />
-          +8801735049535
-        </button>
+        <a href="tel:+8801735049535">
+          <button className="p-2 rounded-full bg-[#009494] w-52 text-white font-semibold">
+            Call Now <br />
+            +8801735049535
+          </button>
+        </a>
       </div>
       <div className=" col col-span-6  my-auto">
-        <img
+        <Image
+          height={100}
+          width={100}
           src="https://it.bcommerce.io/static/media/custom.8f41d893b2c947d0e1f6d8f3747f522a.svg"
           alt="banner"
           className=" h-[420px] w-full flex items-center justify-center"

@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const images = [
   "https://it.bcommerce.io/static/media/chinapaikary.f508ea5d136a049edad823d70ade03f5.svg",
   "https://it.bcommerce.io/static/media/skybuy.aae30f4c23f07d62b20c90fcac470b3b.svg",
@@ -19,8 +21,15 @@ const LatestWorks = () => {
         </span>
       </div>
       <div className="flex justify-center items-center mt-16 gap-16">
-        {images.map((image, index) => (
-          <img key={index} className="h-20 bg-slate-50 " src={image} />
+        {images.map((image) => (
+          <Image
+            height={100}
+            width={100}
+            key={image}
+            alt=""
+            className="h-20 bg-slate-50 "
+            src={image}
+          />
         ))}
       </div>
     </div>

@@ -20,7 +20,7 @@ const LatestWorks = () => {
       </div>
       <div className="flex justify-center items-center mt-16 gap-16">
         {images.map((image) => (
-          <img className="h-20 bg-slate-50 " src={image} />
+          <img key={index} className="h-20 bg-slate-50 " src={image} />
         ))}
       </div>
     </div>

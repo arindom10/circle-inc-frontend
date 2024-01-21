@@ -25,7 +25,7 @@ const DropshippingAd = () => {
         </span>
         <div className="flex">
           {images.map((image) => (
-            <img className="h-5" src={image} />
+            <img key={index} className="h-5" src={image} />
           ))}
         </div>
         <div className="flex gap-3">

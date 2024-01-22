@@ -26,11 +26,11 @@ const Navbar = () => {
 
         {/* Right side */}
         <div className="hidden md:flex items-center mt-4 md:mt-0 gap-4">
-          <Link href="/contact">
+          <a href="tel:+8801735049535">
             <button className="text-white rounded-full bg-[#009494] w-24 h-10font-semibold  mr-2 relative">
               Contact
             </button>
-          </Link>
+          </a>
         </div>
       </div>
     </nav>

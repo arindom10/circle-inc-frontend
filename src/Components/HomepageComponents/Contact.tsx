@@ -26,7 +26,7 @@ const Contact = () => {
           width={100}
           src="https://it.bcommerce.io/static/media/custom.8f41d893b2c947d0e1f6d8f3747f522a.svg"
           alt="banner"
-          className="h-[420px] w-full object-cover md:h-auto md:w-full"
+          className="h-[420px] w-full object-cover md:h-2/4 md:w-3/4"
         />
       </div>
     </div>

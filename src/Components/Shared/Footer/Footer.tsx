@@ -4,7 +4,7 @@ import { FaWhatsapp, FaFacebook } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <div className="" style={{ background: "#006565" }}>
+    <div className="py-5" style={{ background: "#006565" }}>
       <span className=" font-bold text-2xl flex justify-center ">
         CIRCLE INC
       </span>

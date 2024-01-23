@@ -3,29 +3,29 @@ import { FaCheckCircle } from "react-icons/fa";
 
 const Services = () => {
   return (
-    <div className="grid grid-cols-12 gap-4 bg-[#DDEFF1] md:px-32 sm:px-6 px-2 py-8 mt-16">
-      <div className=" col col-span-6  my-auto">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-4 bg-[#DDEFF1] md:px-32 sm:px-6 px-2 py-8 mt-8 md:mt-16">
+      <div className="md:col-span-6 my-auto">
         <Image
           height={100}
           width={100}
           src="https://it.bcommerce.io/static/media/ecommerce.ba25d2ef078c4f6d00da7069dd31ca0e.svg"
           alt="banner"
-          className=" h-[420px] w-full flex items-center justify-center"
+          className="h-[420px] w-full object-cover md:h-auto md:w-full"
         />
       </div>
 
-      <div className=" col col-span-6 flex justify-center flex-col gap-8">
-        <span className=" font-bold text-2xl">
-          কাস্টমাইজড <span className="text-cyan-600">ইকমার্স</span> ওয়েবসাইট এবং
-          মোবাইল অ্যাপ
+      <div className="md:col-span-6 flex justify-center flex-col gap-4">
+        <span className="font-bold text-xl md:text-2xl">
+          কাস্টমাইজড <span className="text-cyan-600 ml-2">ইকমার্স</span>{" "}
+          ওয়েবসাইট এবং মোবাইল অ্যাপ
         </span>
-        <span className="text-lg">
+        <span className="text-base md:text-lg">
           আমরা আপনার ব্যবসার ধরণ, প্রোডাক্ট ক্যাটেগরি এবং কাস্টমার সেগমেন্ট
           অনুযায়ী সকল প্রয়োজনীয় ও এডভান্সড ফিচারসমুহ নিয়ে একটি প্রফেশনাল, সিকিউর
           এবং সুপার ফাস্ট ইকমার্স ওয়েবসাইট ডেভেলপ করে দিবো।
         </span>
 
-        <div className="flex items-center  gap-3">
+        <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
         </div>

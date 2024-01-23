@@ -12,55 +12,57 @@ const DropshippingAd = () => {
   ];
 
   return (
-    <div className="grid grid-cols-12 gap-4  md:px-32 sm:px-6 px-2 py-8">
-      <div className=" col col-span-6 flex justify-center flex-col gap-8">
-        <span className=" font-bold text-2xl">
+    <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:px-32 sm:px-6 px-2 py-8">
+      <div className="md:col-span-6 flex justify-center flex-col gap-8">
+        <span className="font-bold text-xl md:text-2xl">
           এডভান্সড B2B/B2C <span className="text-cyan-600">ড্রপশিপিং</span>{" "}
           ওয়েবসাইট ও অ্যাপ
         </span>
-        <span className="text-lg">
+        <span className="text-sm md:text-lg">
           চায়না, আমেরিকা, যুক্তরাজ্য, দুবাই, ইন্ডিয়া সহ পৃথিবীর যেকোন দেশের
           যেকোন ইকমার্স প্লাটফর্ম (1688, Alibaba, Aliexpress, Amazon, Walmart,
           Flipcart etc) এর সাথে API ইন্ট্রিগ্রেট করে আপনার হোলসেল / রিটেইল
           Dropshipping ওয়েবসাইট ডেভেলপ করুন খুব সহজে।
         </span>
-        <div className="flex gap-4">
+        <div className="flex flex-wrap gap-2 md:gap-4">
           {images.map((image) => (
             <Image
+              key={image}
               height={100}
               width={100}
               alt=""
-              key={image}
-              className="h-5 "
+              className="h-16 md:h-20"
               src={image}
             />
           ))}
         </div>
-        <div className="flex items-center gap-3">
-          <FaCheckCircle className="text-cyan-600" />
-          <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaCheckCircle className="text-cyan-600" />
-          <span>
-            1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট লিঙ্ক
-            দিয়ে সার্চ করার সুবিধা।
-          </span>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaCheckCircle className="text-cyan-600" />
-          <span>সুপার ফাস্ট লোড টাইম এবং ইউজার এক্সপেরিয়েন্স।</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaCheckCircle className="text-cyan-600" />
-          <span>অ্যাডভান্স এবং পারশিয়াল পেমেন্ট সিস্টেম।</span>
-        </div>
-        <div className="flex items-center gap-3">
-          <FaCheckCircle className="text-cyan-600" />
-          <span>বিকাশ, নগদ, ব্যাংক, Sslcommerz পেমেন্ট গেটওয়ে।</span>
+        <div className="flex flex-col gap-2 md:gap-3">
+          <div className="flex items-center gap-3">
+            <FaCheckCircle className="text-cyan-600" />
+            <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaCheckCircle className="text-cyan-600" />
+            <span>
+              1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট
+              লিঙ্ক দিয়ে সার্চ করার সুবিধা।
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaCheckCircle className="text-cyan-600" />
+            <span>সুপার ফাস্ট লোড টাইম এবং ইউজার এক্সপেরিয়েন্স।</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaCheckCircle className="text-cyan-600" />
+            <span>অ্যাডভান্স এবং পারশিয়াল পেমেন্ট সিস্টেম।</span>
+          </div>
+          <div className="flex items-center gap-3">
+            <FaCheckCircle className="text-cyan-600" />
+            <span>বিকাশ, নগদ, ব্যাংক, Sslcommerz পেমেন্ট গেটওয়ে।</span>
+          </div>
         </div>
       </div>
-      <div className=" col col-span-6">
+      <div className="md:col-span-6 mt-8 md:mt-0">
         <Carousel />
       </div>
     </div>

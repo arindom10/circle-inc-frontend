@@ -3,10 +3,10 @@ import Link from "next/link";
 
 const Navbar = () => {
   return (
-    <nav className="bg-gray-400 text-black px-4 md:px-36 py-2 ">
-      <div className="container mx-auto flex flex-row justify-between items-center">
+    <nav className="bg-gray-400 text-black px-4 md:px-36 py-2">
+      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Left side */}
-        <div className="flex items-center">
+        <div className="flex items-center justify-between w-full md:w-auto">
           <div className="text-white mr-4">
             <Link href="/">
               <Image
@@ -24,10 +24,19 @@ const Navbar = () => {
           </div>
         </div>
 
-        {/* Right side */}
+        {/* Right side - Hidden by default, displayed for medium screens and above */}
         <div className="hidden md:flex items-center mt-4 md:mt-0 gap-4">
           <a href="tel:+8801735049535">
-            <button className="text-white rounded-full bg-[#009494] w-24 h-10font-semibold  mr-2 relative">
+            <button className="text-white rounded-full bg-[#009494] w-24 h-10 font-semibold relative">
+              Contact
+            </button>
+          </a>
+        </div>
+
+        {/* Mobile Menu - Displayed for small screens */}
+        <div className="md:hidden mt-4">
+          <a href="tel:+8801735049535">
+            <button className="text-white rounded-full bg-[#009494] w-24 h-10 font-semibold relative">
               Contact
             </button>
           </a>

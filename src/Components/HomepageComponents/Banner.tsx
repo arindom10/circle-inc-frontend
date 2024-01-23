@@ -48,7 +48,7 @@ const Banner = () => {
           width={100}
           src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
           alt="banner"
-          className="h-[420px] w-full  "
+          className="h-[420px] w-full hidden md:block  "
         />
       </div>
     </div>

@@ -27,7 +27,7 @@ const LatestWorks = () => {
             height={100}
             width={100}
             alt=""
-            className="h-20 bg-slate-50"
+            className="h-20 bg-slate-50 "
             src={image}
           />
         ))}

@@ -10,7 +10,7 @@ const Services = () => {
           width={100}
           src="https://it.bcommerce.io/static/media/ecommerce.ba25d2ef078c4f6d00da7069dd31ca0e.svg"
           alt="banner"
-          className="h-[420px] w-full object-cover md:h-2/4 md:w-2/4"
+          className="h-[420px] w-full object-cover md:h-2/4 md:w-2/4 hidden md:block"
         />
       </div>
 

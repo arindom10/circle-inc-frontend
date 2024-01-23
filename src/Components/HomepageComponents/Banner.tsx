@@ -33,6 +33,7 @@ const Banner = () => {
           ইকমার্স/ড্রপশিপিং ওয়েবসাইট এবং মোবাইল অ্যাপ ডেভেলপ করে নিন খুব সহজে
           বিকমার্স থেকে।
         </span>
+
         <a href="tel:+8801735049535">
           <button className="p-2 rounded-full bg-[#009494] w-36 text-white font-semibold mt-4">
             Call Now
@@ -41,13 +42,13 @@ const Banner = () => {
       </div>
 
       {/* Image for all screens */}
-      <div className="col-span-6 my-auto">
+      <div className="col-span-6  my-auto">
         <Image
           height={100}
           width={100}
           src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
           alt="banner"
-          className="h-[420px] w-full flex items-center justify-center "
+          className="h-[420px] w-full  "
         />
       </div>
     </div>

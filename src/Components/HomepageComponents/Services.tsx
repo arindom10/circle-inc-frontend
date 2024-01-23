@@ -32,8 +32,8 @@ const Services = () => {
         <div className="flex items-center gap-3">
           <FaCheckCircle className="text-cyan-600" />
           <span>
-            1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট লিঙ্ক
-            দিয়ে সার্চ করার সুবিধা।
+            1688, Alibaba, Aliexpress, Amazon ইত্যাদি <br /> ওয়েবসাইটের
+            প্রোডাক্ট লিঙ্ক দিয়ে সার্চ করার সুবিধা।
           </span>
         </div>
         <div className="flex items-center gap-3">

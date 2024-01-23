@@ -14,7 +14,7 @@ const DropshippingAd = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-12 gap-4 md:px-32 sm:px-6 px-2 py-8">
       <div className="md:col-span-6 flex justify-center flex-col gap-8">
-        <span className="font-bold text-xl md:text-2xl">
+        <span className="font-bold text-lg md:text-2xl">
           এডভান্সড B2B/B2C <span className="text-cyan-600">ড্রপশিপিং</span>{" "}
           ওয়েবসাইট ও অ্যাপ
         </span>
@@ -31,21 +31,21 @@ const DropshippingAd = () => {
               height={100}
               width={100}
               alt=""
-              className="h-16 md:h-20"
+              className="h-5 md:h-5"
               src={image}
             />
           ))}
         </div>
         <div className="flex flex-col gap-2 md:gap-3">
           <div className="flex items-center gap-3">
-            <FaCheckCircle className="text-cyan-600" />
+            <FaCheckCircle className="text-cyan-600 " />
             <span>যেকোন ইমেজ দিয়ে পণ্য সার্চ করার সুবিধা।</span>
           </div>
           <div className="flex items-center gap-3">
-            <FaCheckCircle className="text-cyan-600" />
+            <FaCheckCircle className="text-cyan-600 " />
             <span>
-              1688, Alibaba, Aliexpress, Amazon ইত্যাদি ওয়েবসাইটের প্রোডাক্ট
-              লিঙ্ক দিয়ে সার্চ করার সুবিধা।
+              1688, Alibaba, Aliexpress, Amazon ইত্যাদি <br /> ওয়েবসাইটের
+              প্রোডাক্ট লিঙ্ক দিয়ে সার্চ করার সুবিধা।
             </span>
           </div>
           <div className="flex items-center gap-3">

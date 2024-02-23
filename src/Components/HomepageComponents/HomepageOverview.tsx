@@ -4,12 +4,14 @@ import DropshippingAd from "./DropshippingAd";
 import LatestWorks from "./LatestWorks";
 import OurTeam from "./OurTeam";
 import Services from "./Services";
+import WhatWeOffer from "./WhatWeOffer";
 
 const HomepageOverview = () => {
   return (
     <div>
       <Banner />
-      <DropshippingAd />
+      <WhatWeOffer />
+      {/* <DropshippingAd /> */}
       <LatestWorks />
       <Services />
       <Contact />

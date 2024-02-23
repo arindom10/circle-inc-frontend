@@ -270,6 +270,7 @@ const ExpertWith = () => {
               <div className="grid grid-cols-6 gap-8 mt-4">
                 {sin.data?.map((sin: OfferType) => (
                   <div
+                    key={sin.id}
                     style={{ boxShadow: "0px 2px 5px 0px #50C3F4CC" }}
                     className="flex flex-col items-center"
                   >

@@ -260,8 +260,15 @@ const ExpertWith = () => {
       <div>
         <Tabs>
           <TabList>
-            {[1, 2, 3, 4, 5, 6].map((sin: number) => (
-              <Tab key={sin}>Title {sin}</Tab>
+            {[
+              "Add kor",
+              "Jani na",
+              "Kutkut khela",
+              "Web",
+              "Content",
+              "Mobile",
+            ].map((sin: string) => (
+              <Tab key={sin}>{sin}</Tab>
             ))}
           </TabList>
 

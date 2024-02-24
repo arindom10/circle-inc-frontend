@@ -14,7 +14,7 @@ const HomepageOverview = () => {
       <WhatWeOffer />
       <ExpertWith />
       {/* <DropshippingAd /> */}
-      {/* <LatestWorks /> */}
+      <LatestWorks />
       <Services />
       <Contact />
       <OurTeam />

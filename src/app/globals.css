@@ -26,6 +26,9 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.bg-primary{
+  background-color: #498CCA;
+}
 .text-primary{
   color: #498CCA;
 }

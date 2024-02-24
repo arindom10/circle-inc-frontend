@@ -3,7 +3,7 @@ import Image from "next/image";
 const Banner = () => {
   return (
     <div
-      className="grid grid-cols-12 gap-4 md:px-32 sm:px-6 px-2 py-8 text-white"
+      className="grid grid-cols-12 gap-4 md:px-32 sm:px-6 px-2 pt-8 text-white"
       style={{
         background:
           "linear-gradient(32.22deg, #498CCA -35.86%, #193D70 104.35%, #1E4579 104.35%)",

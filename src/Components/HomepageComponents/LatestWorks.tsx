@@ -1,36 +1,87 @@
+"use client";
 import Image from "next/image";
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const images = [
-  "https://it.bcommerce.io/static/media/chinapaikary.f508ea5d136a049edad823d70ade03f5.svg",
-  "https://it.bcommerce.io/static/media/skybuy.aae30f4c23f07d62b20c90fcac470b3b.svg",
-  "https://it.bcommerce.io/static/media/chinaship.f8098b31387591aa07339edbcc311bfc.svg",
+const imageUrls = [
+  "https://swiperjs.com/demos/images/nature-1.jpg",
+  "https://swiperjs.com/demos/images/nature-2.jpg",
+  "https://swiperjs.com/demos/images/nature-3.jpg",
+  "https://swiperjs.com/demos/images/nature-4.jpg",
+  "https://swiperjs.com/demos/images/nature-5.jpg",
+  "https://swiperjs.com/demos/images/nature-6.jpg",
+  "https://swiperjs.com/demos/images/nature-7.jpg",
+  "https://swiperjs.com/demos/images/nature-8.jpg",
+  "https://swiperjs.com/demos/images/nature-9.jpg",
 ];
+
+const responsive = {
+  desktop: {
+    breakpoint: { max: 3000, min: 1024 },
+    items: 3,
+    slidesToSlide: 3, // optional, default to 1.
+  },
+  tablet: {
+    breakpoint: { max: 1024, min: 464 },
+    items: 2,
+    slidesToSlide: 2, // optional, default to 1.
+  },
+  mobile: {
+    breakpoint: { max: 464, min: 0 },
+    items: 1,
+    slidesToSlide: 1, // optional, default to 1.
+  },
+};
 
 const LatestWorks = () => {
   return (
-    <div className="mt-8 md:mt-16">
-      <div className="text-center">
-        <span className="font-bold text-xl md:text-2xl">
-          আমরা <span className="text-cyan-600 ml-2"> ডেভেলপ করেছি </span>
-        </span>
+    <div
+      className="mt-8 md:mt-16 py-8 md:px-32 sm:px-6"
+      style={{
+        backgroundImage:
+          "url('https://i.ibb.co/VCxcGf2/image-2024-02-24-21-43-28.png')",
+        backgroundSize: "cover",
+      }}
+    >
+      <h2 className=" text-center font-bold text-primary text-4xl">
+        OUR PROJECTS
+      </h2>
+      <div className="text-center my-4 text-white">
+        We try to provide our best value for our customers. Here are some recent
+        projects we completed.
       </div>
-      <div className="text-center mt-2 md:mt-4">
-        <span className="font-bold text-xl md:text-2xl">
-          দেশের সেরা <span className="text-cyan-600 ml-2"> ৩ টি </span>
-          <span className="ml-2">ড্রপশিপিং ওয়েবসাইট</span>
-        </span>
+      <div className="mt-4">
+        <Carousel
+          swipeable={false}
+          draggable={false}
+          showDots={true}
+          responsive={responsive}
+          ssr={true} // means to render carousel on server-side.
+          infinite={true}
+          autoPlay={true}
+          autoPlaySpeed={2000}
+          keyBoardControl={true}
+          customTransition="all .5"
+          transitionDuration={1000}
+          dotListClass="custom-dot-list-style "
+          itemClass="px-4"
+        >
+          {imageUrls?.map((single: string) => (
+            <Image
+              key={single}
+              src={single}
+              alt="img"
+              height={100}
+              width={100}
+              className="h-[300px] w-full"
+            />
+          ))}
+        </Carousel>
       </div>
-      <div className="flex flex-col md:flex-row justify-center items-center mt-4 md:mt-8 gap-4 md:gap-16">
-        {images.map((image) => (
-          <Image
-            key={image}
-            height={100}
-            width={100}
-            alt=""
-            className="h-20 bg-slate-50 "
-            src={image}
-          />
-        ))}
+      <div className="mt-4 flex items-center justify-center">
+        <button className="bg-primary px-8 py-2 rounded-lg text-white">
+          VIEW ALL
+        </button>
       </div>
     </div>
   );

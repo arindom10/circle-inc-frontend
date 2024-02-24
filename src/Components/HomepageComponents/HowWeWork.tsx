@@ -17,7 +17,7 @@ const HowWeWork = () => {
           alt="img"
           height={100}
           width={100}
-          className="w-[80%] h-[450px]"
+          className="w-[100%] md:w-[80%] h-[300px] md:h-[450px]"
         />
       </div>
     </div>

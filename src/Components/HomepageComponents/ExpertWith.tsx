@@ -247,11 +247,11 @@ const fakeData: FakeDataType[] = [
 
 const ExpertWith = () => {
   return (
-    <div className="py-8 md:px-32 sm:px-6 px-2">
+    <div className="py-4 md:py-8 md:px-32 sm:px-6 px-2">
       <h2 className=" text-center font-bold text-primary text-4xl">
         We Expert With
       </h2>
-      <div className="text-center my-4 px-20">
+      <div className="text-center my-4 md:px-20 px-4">
         We stand innovative at the forefront of technology, constantly updating
         skills to stay ahead in the evolving digital landscape. We work with
         diverse technologies to deliver cutting-edge solutions to clients.
@@ -273,7 +273,7 @@ const ExpertWith = () => {
 
           {fakeData.map((sin: FakeDataType) => (
             <TabPanel key={sin.id}>
-              <div className="grid grid-cols-6 gap-8 mt-4">
+              <div className="grid grid-cols-3 md:grid-cols-6 gap-8 mt-4">
                 {sin.data?.map((sin: OfferType) => (
                   <div
                     key={sin.id}
@@ -285,7 +285,7 @@ const ExpertWith = () => {
                       width={100}
                       alt="img"
                       src={sin?.image}
-                      className="w-full h-[150px]"
+                      className="w-full h-[100px] md:h-[150px]"
                     />
                     <h1>{sin.name}</h1>
                   </div>

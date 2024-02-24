@@ -86,16 +86,16 @@ const OurValues = () => {
             are unique
           </h2>
           <p>
-            We experiment, we adapt, we learn. Technology changes quickly; we
+            {`We experiment, we adapt, we learn. Technology changes quickly; we
             change with it. We’re on a mission to build platform that helps
-            people, that makes their lives better in ways big and small.
+            people, that makes their lives better in ways big and small.`}
           </p>
           {[1, 2, 3, 4, 5, 6, 7, 8].map((sin: number) => (
-            <div className="flex items-start gap-2">
+            <div className="flex items-start gap-2" key={sin}>
               <div className="my-2 w-[30px] h-[4px] block bg-[#54C3F0]" />
               <p>
-                We are open-minded and never assume there's only one solution to
-                a problem.
+                {`We are open-minded and never assume there's only one solution to
+                a problem.`}
               </p>
             </div>
           ))}

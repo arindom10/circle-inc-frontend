@@ -5,6 +5,7 @@ import ExpertWith from "./ExpertWith";
 import HowWeWork from "./HowWeWork";
 import LatestWorks from "./LatestWorks";
 import OurTeam from "./OurTeam";
+import OurValues from "./OurValues";
 import Services from "./Services";
 import WhatWeOffer from "./WhatWeOffer";
 
@@ -18,6 +19,7 @@ const HomepageOverview = () => {
       <LatestWorks />
       {/* <Services /> */}
       <HowWeWork />
+      <OurValues />
       <Contact />
       <OurTeam />
     </div>

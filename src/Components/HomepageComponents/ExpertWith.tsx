@@ -2,7 +2,6 @@
 import Image from "next/image";
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
-import "react-tabs/style/react-tabs.css";
 
 interface OfferType {
   id: number;

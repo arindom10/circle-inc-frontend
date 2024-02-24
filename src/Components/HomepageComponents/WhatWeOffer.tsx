@@ -84,7 +84,7 @@ const WhatWeOffer = () => {
         unique needs, providing you with the tools and expertise to stay ahead
         of the competition.
       </div>
-      <div className="grid grid-cols-3 gap-8 mt-4">
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-4">
         {fakeData.map((sin: OfferType) => (
           <div className="w-full border-2 rounded-lg shadow-lg" key={sin.id}>
             <div className="relative">

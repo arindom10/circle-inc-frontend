@@ -7,12 +7,12 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Mobile Menu - Displayed for small screens */}
         <div className="md:hidden flex items-center justify-between w-full">
-          <div className="text-white">
+          <div className=" ">
             <Link href="/">
               <Image
                 height={100}
                 width={100}
-                src="https://www.buyerzonebd.com/images/Circle-inc-W.png"
+                src="https://i.ibb.co.com/L8ngMTD/Circle-inc-W-1.png"
                 alt="Circle"
                 style={{
                   height: "35px",
@@ -36,11 +36,11 @@ const Navbar = () => {
               <Image
                 height={100}
                 width={100}
-                src="https://www.buyerzonebd.com/images/Circle-inc-W.png"
+                src="https://i.ibb.co.com/L8ngMTD/Circle-inc-W-1.png"
                 alt="Circle"
                 style={{
-                  height: "35px",
-                  width: "120px",
+                  height: "82px",
+                  width: "140px",
                   borderRadius: "5px",
                 }}
               />

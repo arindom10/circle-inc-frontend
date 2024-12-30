@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@types/react-tabs": "^5.0.5",
+    "circle-inc-frontend": "file:",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",

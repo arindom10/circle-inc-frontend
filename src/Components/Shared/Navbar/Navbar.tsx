@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
         {/* Mobile Menu - Displayed for small screens */}
         <div className="md:hidden flex items-center justify-between w-full">
-          <div className=" ">
+          <div className="text-white">
             <Link href="/">
               <Image
                 height={100}

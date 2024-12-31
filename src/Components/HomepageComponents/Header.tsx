@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           <div className="flex items-center space-x-2">
             <FaPhoneAlt className="text-white" />
             <a href="tel:+8801735049535">
-              <span>+880 1716 213091</span>
+              <span>+8801735-049535</span>
             </a>
           </div>
           <div className="flex items-center space-x-4">

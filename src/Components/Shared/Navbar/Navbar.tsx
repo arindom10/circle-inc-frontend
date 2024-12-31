@@ -1,60 +1,59 @@
-import Image from "next/image";
+import React from "react";
 import Link from "next/link";
+import { useRouter } from "next/router";
+import Image from "next/image";
 
-const Navbar = () => {
+const Navbar: React.FC = () => {
+  const router = useRouter();
+
+  const navItems = [
+    { name: "Home", href: "/" },
+    { name: "Service", href: "/service" },
+    { name: "Projects", href: "/projects" },
+    { name: "Blog", href: "/blog" },
+    { name: "About Us", href: "/about" },
+  ];
+
   return (
-    <nav className="bg-[#498CCA] text-black px-4 md:px-36 py-2">
-      <div className="container mx-auto flex flex-col md:flex-row justify-between items-center">
-        {/* Mobile Menu - Displayed for small screens */}
-        <div className="md:hidden flex items-center justify-between w-full">
-          <div className="text-white">
-            <Link href="/">
-              <Image
-                height={100}
-                width={100}
-                src="https://i.ibb.co.com/L8ngMTD/Circle-inc-W-1.png"
-                alt="Circle"
-                style={{
-                  height: "35px",
-                  width: "120px",
-                  borderRadius: "5px",
-                }}
-              />
-            </Link>
-          </div>
-          <a href="tel:+8801735049535">
-            <button className="text-white rounded-full bg-[#009494] w-24 h-10 font-semibold relative">
-              Contact
-            </button>
-          </a>
+    <nav className="bg-blue-900 text-white py-4">
+      <div className="container mx-auto flex justify-between items-center px-6">
+        {/* Logo Section */}
+        <div className="flex items-center space-x-2">
+          <Image
+            src="/logo.png" // Replace with your logo path
+            alt="Circle Logo"
+            className="h-8"
+          />
+          <span className="text-lg font-bold">CIRCLE</span>
         </div>
 
-        {/* Left side - Hidden by default, displayed for medium screens and above */}
-        <div className="hidden md:flex items-center mt-4 md:mt-0">
-          <div className="text-white mr-4">
-            <Link href="/">
-              <Image
-                height={100}
-                width={100}
-                src="https://i.ibb.co.com/L8ngMTD/Circle-inc-W-1.png"
-                alt="Circle"
-                style={{
-                  height: "82px",
-                  width: "140px",
-                  borderRadius: "5px",
-                }}
-              />
-            </Link>
-          </div>
-        </div>
+        {/* Navigation Links */}
+        <ul className="flex space-x-6">
+          {navItems.map((item) => (
+            <li key={item.name}>
+              <Link href={item.href}>
+                <Link
+                  href="#"
+                  className={`${
+                    router.pathname === item.href
+                      ? "text-blue-400 font-semibold"
+                      : "text-white hover:text-blue-400"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+              </Link>
+            </li>
+          ))}
+        </ul>
 
-        {/* Right side - Hidden by default, displayed for medium screens and above */}
-        <div className="hidden md:flex items-center mt-4 md:mt-0 gap-4">
-          <a href="tel:+8801735049535">
-            <button className="text-white rounded-full bg-[#009494] w-24 h-10 font-semibold relative">
-              Contact
-            </button>
-          </a>
+        {/* Call-to-Action Button */}
+        <div>
+          <Link href="/contact">
+            <a className="bg-blue-600 hover:bg-blue-500 text-white py-2 px-4 rounded-md font-semibold">
+              LET'S TALK
+            </a>
+          </Link>
         </div>
       </div>
     </nav>

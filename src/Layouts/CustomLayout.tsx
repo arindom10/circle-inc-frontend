@@ -9,11 +9,7 @@ export default function CustomLayout({
 }) {
   return (
     <section>
-      <div style={{ position: "fixed", width: "100%", zIndex: 999 }}>
-        <Header />
-        {/* <Navbar /> */}
-      </div>
-      <div className="mx-auto py-2  w-100 bg-white text-black  pt-[50px] min-h-[95vh]">
+      <div className="mx-auto  w-100 bg-white text-black   min-h-[95vh]">
         {children}
       </div>
       <div>

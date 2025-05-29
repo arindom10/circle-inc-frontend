@@ -259,16 +259,11 @@ const ExpertWith = () => {
       <div>
         <Tabs>
           <TabList>
-            {[
-              "Add kor",
-              "Jani na",
-              "Kutkut khela",
-              "Web",
-              "Content",
-              "Mobile",
-            ].map((sin: string) => (
-              <Tab key={sin}>{sin}</Tab>
-            ))}
+            {["Web", "Framework", "UI/UX", "Mobile", "DevOps", "Bramding"].map(
+              (sin: string) => (
+                <Tab key={sin}>{sin}</Tab>
+              )
+            )}
           </TabList>
 
           {fakeData.map((sin: FakeDataType) => (

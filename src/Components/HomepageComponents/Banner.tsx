@@ -35,7 +35,6 @@ const Banner = () => {
         <Image
           height={100}
           width={100}
-          // src="https://i.ibb.co/HPbVRWm/output-onlinegiftools.gif"
           src="https://i.ibb.co/m4Z3VPr/image-2024-02-23-23-50-02.png"
           alt="banner"
           className="h-[420px] w-full hidden md:block  "

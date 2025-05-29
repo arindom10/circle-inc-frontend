@@ -17,8 +17,13 @@ export default function HeroSection() {
             <span>circle.inc@gmail.com</span>
           </div>
           <div className="flex items-center gap-4">
-            <BsTelephoneFill className="text-base" />
-            <span>+880 1716 213091</span>
+            <a
+              href="tel:+8801735049535"
+              className="flex items-center gap-2 text-gray-300 hover:text-white"
+            >
+              <BsTelephoneFill className="text-base" />
+              <span>+880 1716 213091</span>
+            </a>
             <FaTelegram className="text-xl" />
             <FaSkype className="text-xl" />
             <FaWhatsapp className="text-xl" />
@@ -51,9 +56,12 @@ export default function HeroSection() {
             About Us
           </Link>
         </nav>
-        <button className="bg-blue-400 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-semibold">
-          LET'S TALK
-        </button>
+        <a
+          href="tel:+8801735049535"
+          className="bg-blue-400 hover:bg-blue-500 text-white px-5 py-2 rounded-full text-sm font-semibold"
+        >
+          LET&#39;S TALK
+        </a>
       </header>
 
       {/* Hero Main Content */}
